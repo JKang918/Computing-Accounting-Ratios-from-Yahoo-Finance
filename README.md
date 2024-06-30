@@ -47,11 +47,11 @@ ic_AAPL, bs_AAPL, cf_AAPL = get_financial_data("AAPL")
 
 #### Income Statement
 
-![schematics](Images/ic_eg.png)
+![income_statement](./ic_eg.png)
 
 #### Statement of Cash Flow
 
-![schematics](Images/cf_eg.png)
+![statement_of_cash_flow](./cf_eg.png)
 
 #### (Ex) when only a certain account is required
 
@@ -60,7 +60,11 @@ ic_AAPL, bs_AAPL, cf_AAPL = get_financial_data("AAPL")
 bs_AAPL.get("EBITDA")
 ```
 
-![schematics](Images/bs_ebitda_eg.png)
+![specific_account](./bs_ebitda_eg.png)
+
+For the above codes, check here:
+
+[Financial_statements](https://github.com/JKang918/Computing-Accounting-Ratios-from-Yahoo-Finance/blob/main/FinancialStatements.ipynb)
 
 
 ## Example: More complex cases
@@ -71,5 +75,21 @@ We can use this to calculate more complex statistics.
 
 I took two examples - Ohlson O score and Beneish M score - to show you this.
 
+**O-score example is here:**
+
+[O-score](https://github.com/JKang918/Computing-Accounting-Ratios-from-Yahoo-Finance/blob/main/Oscore.ipynb)
 
 
+**M-score example is here:**
+
+[M-score](https://github.com/JKang918/Computing-Accounting-Ratios-from-Yahoo-Finance/blob/main/Beneish.ipynb)
+
+
+These might look complex but if you take a close look it is all about extracting a few accounts from financial statements and make some calculations out of them.
+
+In case you are interested in what O-score or M-score, check out below.
+
+[O-score(Wikipedia)](https://en.wikipedia.org/wiki/Ohlson_O-score)\
+[M-score(Wikipedia)](https://en.wikipedia.org/wiki/Beneish_M-score)
+
+O-score is a statistic calculated with several accounting ratios to guage a firm's default probability while M-score is used to predict possible earnings manipulation.
