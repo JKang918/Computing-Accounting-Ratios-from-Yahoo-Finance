@@ -43,7 +43,7 @@ ic_AAPL, bs_AAPL, cf_AAPL = get_financial_data("AAPL")
 
 #### Balance Sheet
 
-![schematics](Images/bs_eg.png)
+![balance_sheet](./bs_eg.png)
 
 #### Income Statement
 
