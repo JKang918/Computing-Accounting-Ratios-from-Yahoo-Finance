@@ -77,12 +77,12 @@ I took two examples - Ohlson O score and Beneish M score - to show you this.
 
 **O-score example is here:**
 
-[O-score](https://github.com/JKang918/Computing-Accounting-Ratios-from-Yahoo-Finance/blob/main/Oscore.ipynb)
+[O-score(my github, jupyter notebook)](https://github.com/JKang918/Computing-Accounting-Ratios-from-Yahoo-Finance/blob/main/Oscore.ipynb)
 
 
 **M-score example is here:**
 
-[M-score](https://github.com/JKang918/Computing-Accounting-Ratios-from-Yahoo-Finance/blob/main/Beneish.ipynb)
+[M-score(my github, jupyter notebook)](https://github.com/JKang918/Computing-Accounting-Ratios-from-Yahoo-Finance/blob/main/Beneish.ipynb)
 
 
 These might look complex but if you take a close look it is all about extracting a few accounts from financial statements and make some calculations out of them.
