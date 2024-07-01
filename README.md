@@ -3,11 +3,11 @@ Calculating various ratios using yahoo finance data
 
 ## **yfinance** libaray
 
-Although there are various professional databases including Compustate offered by S&P for accounting and finance professionals to use, but sometimes one can find they are expensive and a bit too heavy to use.
+Although there are various professional databases including Compustat for accounting and finance professionals, they can be sometimes a bit too expensive and heavy to use.
 
-In this case, you can easily use free libaray, **yfinance** to extract accounting data from publicly available *Yahoo Finance* website.
+In this case, you can easily use a free libaray, **yfinance** to extract accounting data from publicly available *Yahoo Finance* website.
 
-By extracting financial statements from Yahoo Finance, you can calculate various accounting ratios from simple PER, PBR to more complex statistics such as Ohlson O-score (1980) or Beneish M-score (1999).
+By extracting financial statements from Yahoo Finance, you can calculate various accounting ratios ranging from PER, PBR to more complex statistics such as Ohlson O-score (1980) or Beneish M-score (1999).
 
 In this article, I would like to share a simple way to do this and a few examples.
 
@@ -28,7 +28,7 @@ def get_financial_data(ticker):
     return financials, balance_sheet, cashflow
 ```
 
-This is it.\
+This is it!\
 Using the function, `get_financial_data`, various financial statements can be extracted from Yahoo Finance. 
 
 1. financials: income statement
@@ -69,11 +69,11 @@ For the above codes, check here:
 
 ## Example: More complex cases
 
-Ok. Now we now how to extract both 1. a whole financial statement and 2. a certain account.
+Ok. Now we now how to extract 1. financial statements and 2. specific accounts.
 
 We can use this to calculate more complex statistics. 
 
-I took two examples - Ohlson O score and Beneish M score - to show you this.
+I took two examples - Ohlson O score and Beneish M score.
 
 **O-score example is here:**
 
@@ -92,4 +92,12 @@ In case you are interested in what O-score or M-score, check out below.
 [O-score(Wikipedia)](https://en.wikipedia.org/wiki/Ohlson_O-score)\
 [M-score(Wikipedia)](https://en.wikipedia.org/wiki/Beneish_M-score)
 
-O-score is a statistic calculated with several accounting ratios to guage a firm's default probability while M-score is used to predict possible earnings manipulation.
+O-score is a statistic to guage a firm's default probability while M-score is used to predict possible earnings manipulation.
+
+The process can be summarized as below:
+
+1. extract financial statements
+2. extract certain accounts of interest
+3. use formula or functions to get tailored ratios
+4. make a table of those ratios
+5. do what you need to do with that!
